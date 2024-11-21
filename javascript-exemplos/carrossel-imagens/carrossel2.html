@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="../../css/materialize.css">
+
+  <title>carrossel de imagens</title>
+</head>
+<body>
+  <!-- <div class="carousel carousel-slider"> -->
+  
+    <div class="carousel carousel-slider" style="height: 100vh;">
+      <a class="carousel-item" href="#"><img src="./6.png"></a>   
+      <a class="carousel-item" href="#"><img src="./7.png"></a>  
+      <a class="carousel-item" href="#"><img src="./8.png"></a>
+      <a class="carousel-item" href="#"><img src="./9.png"></a>
+    </div>
+ 
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src="../../js/materialize.js"></script>
+    <!-- com jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript">
+    $(document).ready(function () {
+      $('.carousel').carousel();
+    });
+  </script> -->
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+        const elems = document.querySelectorAll('.carousel');
+        const options = {
+          fullWidth: true,
+          indicators: true, 
+          
+        };        
+        const instances = M.Carousel.init(elems, options);
+        
+      });
+    </script>
+
+</body>
+
+</html>
